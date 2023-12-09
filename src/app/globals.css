@@ -33,4 +33,7 @@
   .btn-xs {
     @apply px-3 font-medium border-none;
   }
+  .active {
+    @apply !text-primary !bg-transparent;
+  }
 }

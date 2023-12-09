@@ -34,6 +34,25 @@ export default function Home() {
             className="drawer-overlay"
           ></label>
           <Sidebar />
+
+          {/* Put this part before </body> tag */}
+          <input type="checkbox" id="AddNewItem" className="modal-toggle" />
+          <div className="modal" role="dialog">
+            <form className="modal-box">
+              <h3 className="text-neutral">Add new Leasson/Page</h3>
+              <input
+                type="text"
+                className="w-full bg-transparent p-3 border border-accent focus:outline-none mt-4 rounded-lg"
+                placeholder="Give a title ..."
+              />
+              <div className="modal-action">
+                <label htmlFor="AddNewItem" className="btn btn-sm bg-base-200">
+                  Close!
+                </label>
+                <button className="btn btn-sm bg-base-200">Add</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>
