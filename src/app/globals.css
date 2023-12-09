@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  h3 {
+    @apply text-lg font-semibold;
+  }
+  h4 {
+    @apply text-base font-bold;
+  }
+  small {
+    @apply text-xs;
+  }
+}
+
+@layer components {
+  .badge {
+    @apply text-[11px] font-semibold py-2;
+  }
+  .btn {
+    @apply bg-primary border-error rounded-lg text-white px-8 capitalize;
+  }
+  .btn-sm {
+    @apply px-4 text-xs;
+  }
+  .btn-xs {
+    @apply px-3 font-medium border-none;
+  }
+}
