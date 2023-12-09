@@ -14,10 +14,10 @@ const config: Config = {
         blog_dark: {
           primary: "#E78109",
           secondary: "#DDCEC6",
-          accent: "#1e232a",
+          accent: "#242a2c",
           neutral: "#908A82",
           "base-100": "#131E1F",
-          "base-200": "#0F1718  ",
+          "base-200": "#0F1718",
           info: "#58a6ff",
           success: "#00d600",
           warning: "#ef4444",
