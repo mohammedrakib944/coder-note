@@ -11,7 +11,7 @@
   background: #f1f1f1;
 }
 .ql-editor.ql-blank::before {
-  color: #ddddddaf !important;
+  color: #a3a3a3 !important;
 }
 .ql-toolbar.ql-snow + .ql-container.ql-snow {
   border: none !important;

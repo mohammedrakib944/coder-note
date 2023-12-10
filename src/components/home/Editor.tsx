@@ -44,7 +44,7 @@ const EditArticle = () => {
     ["bold", "italic", "underline", "strike"], // toggled buttons
     ["blockquote", "code-block"],
     [{ list: "ordered" }, { list: "bullet" }],
-    [{ background: [] }],
+    [{ color: [] }, { background: [] }],
     ["image"],
     ["clean"], // remove formatting button
   ];
@@ -62,7 +62,7 @@ const EditArticle = () => {
     <div className="max-w-[800px] mx-auto min-h-screen p-3">
       <div>
         <div className="flex flex-col md:flex-row gap-5">
-          <div className="w-full border-r border-accent pr-5">
+          <div className="w-full pr-5">
             <input
               type="text"
               value={title}

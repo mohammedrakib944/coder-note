@@ -9,8 +9,20 @@ const config: Config = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
-      // "blog_dark", // first one will be the default theme
       {
+        blog_light: {
+          primary: "#d56405",
+          secondary: "#212121",
+          accent: "#eee4e4",
+          neutral: "#595854",
+          // "base-100": "#131E1F",
+          "base-100": "#FFFFFF",
+          "base-200": "#fbfbfa",
+          info: "#58a6ff",
+          success: "#00d600",
+          warning: "#ef4444",
+          error: "#1e232a",
+        },
         blog_dark: {
           primary: "#E78109",
           secondary: "#DDCEC6",
@@ -24,7 +36,6 @@ const config: Config = {
           warning: "#ef4444",
           error: "#1e232a",
         },
-        blog_light: {},
       },
     ],
   },
