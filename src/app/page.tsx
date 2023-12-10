@@ -7,18 +7,18 @@ export default function Home() {
     <main className="text-secondary">
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content py-4 px-3 md:px-6">
-          {/* Hamburger */}
-          <label
-            htmlFor="my-drawer-2"
-            className="drawer-button lg:hidden cursor-pointer text-xl"
-          >
-            <MdNotes />
-          </label>
-
+        <div className="drawer-content px-3 md:px-6">
           {/* Page content */}
-          <div className="text-sm breadcrumbs">
-            <ul>
+          <div className="text-sm breadcrumbs py-2 lg:py-3 sticky top-0 lg:top-0 bg-base-100 z-50">
+            {/* Hamburger */}
+
+            <label
+              htmlFor="my-drawer-2"
+              className="drawer-button lg:hidden cursor-pointer text-xl"
+            >
+              <MdNotes />
+            </label>
+            <ul className="mt-3 lg:mt-0">
               <li>
                 <a>Home</a>
               </li>
