@@ -3,8 +3,6 @@ import "./Editor.css";
 import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
-import { FaBackward } from "react-icons/fa";
-import { FaCloudUploadAlt } from "react-icons/fa";
 
 // Editor
 // import "react-quill/dist/quill.snow.css";
@@ -39,10 +37,7 @@ const EditArticle = () => {
   const router = useRouter();
 
   const [content, setContent] = useState("");
-  const [tags, setTags] = useState<string[]>([]);
   const [title, setTitle] = useState("Javascript");
-  const [coverImage, setCoverImage] = useState("");
-  const [category, setCategory] = useState("");
 
   const toolbarOptions = [
     [{ header: [1, 2, 3, 4, 5, 6, false] }],
