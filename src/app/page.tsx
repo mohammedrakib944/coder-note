@@ -7,7 +7,7 @@ export default function Home() {
     <main className="text-secondary">
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content py-4 px-6">
+        <div className="drawer-content py-4 px-3 md:px-6">
           {/* Hamburger */}
           <label
             htmlFor="my-drawer-2"

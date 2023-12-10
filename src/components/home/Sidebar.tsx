@@ -4,13 +4,13 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 
 const Sidebar = () => {
   return (
-    <div className="menu px-6 py-2 w-[350px] min-h-full bg-base-200 text-base-content border-r border-accent">
+    <div className="menu px-6 py-2 w-[300px] min-h-full bg-base-200 text-base-content border-r border-accent">
       <div>
         <img src="/logo.svg" className="w-[200px]" alt="Logo" />
       </div>
       <div className="mt-5">
         <input
-          className="w-full py-2 px-5 rounded-lg bg-base-100 border border-neutral focus:outline-none"
+          className="w-full py-2 px-5 rounded-lg bg-base-100 border border-accent focus:outline-none"
           type="text"
           placeholder="Search...   "
         />
@@ -26,7 +26,7 @@ const Sidebar = () => {
         </label>
       </div>
       {/* Menu */}
-      <ul className="menu text-base text-neutral rounded-box p-0 mt-4">
+      <ul className="menu text-neutral rounded-box p-0 mt-4">
         <li>
           <details open>
             <summary>

@@ -3,11 +3,28 @@ import "./Editor.css";
 import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
+import hljs from "highlight.js";
+import "highlight.js/styles/monokai-sublime.css";
 
 // Editor
 // import "react-quill/dist/quill.snow.css";
 import "react-quill/dist/quill.bubble.css";
-const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+// const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+const ReactQuill = dynamic(
+  () => {
+    hljs.configure({
+      // optionally configure hljs
+      languages: ["javascript", "php", "go"],
+    });
+    // @ts-ignore
+    window.hljs = hljs;
+    return import("react-quill");
+  },
+  {
+    ssr: false,
+    loading: () => <p>Loading...</p>,
+  }
+);
 
 // Image handler
 function imageHandler(this: any) {
@@ -50,6 +67,7 @@ const EditArticle = () => {
   ];
 
   const module = {
+    syntax: true,
     toolbar: {
       container: toolbarOptions,
       handlers: {
@@ -59,10 +77,10 @@ const EditArticle = () => {
   };
 
   return (
-    <div className="max-w-[800px] mx-auto min-h-screen p-3">
+    <div className="max-w-[750px] mx-auto min-h-screen">
       <div>
         <div className="flex flex-col md:flex-row gap-5">
-          <div className="w-full pr-5">
+          <div className="w-full">
             <input
               type="text"
               value={title}
@@ -71,7 +89,7 @@ const EditArticle = () => {
             />
             <img src="./bar.svg" alt="" />
             <br />
-            <div className="mt-4 pl-3">
+            <div className="mt-4 md:pl-3">
               <ReactQuill
                 value={content}
                 placeholder="Write here ..."
