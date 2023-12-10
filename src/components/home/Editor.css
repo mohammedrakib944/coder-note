@@ -1,0 +1,26 @@
+.ql-editor {
+  min-height: fit-content !important;
+  padding: 16px 8px !important;
+  font-size: 18px !important;
+}
+.ql-toolbar.ql-snow {
+  width: fit-content;
+  border-radius: 40px;
+  border: 2px solid black;
+  padding: 8px !important;
+  background: #f1f1f1;
+}
+.ql-editor.ql-blank::before {
+  color: #ddddddaf !important;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border: none !important;
+}
+
+.cl-internal-b3fm6y {
+  display: none !important;
+}
+
+.ql-bubble * {
+  z-index: 10;
+}

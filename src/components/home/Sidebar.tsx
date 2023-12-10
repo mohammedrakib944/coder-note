@@ -26,10 +26,10 @@ const Sidebar = () => {
         </label>
       </div>
       {/* Menu */}
-      <ul className="menu text-base font-semibold rounded-box p-0 mt-4">
+      <ul className="menu text-base text-neutral rounded-box p-0 mt-4">
         <li>
           <details open>
-            <summary className="text-neutral">
+            <summary>
               <label
                 className="text-xl tooltip cursor-pointer"
                 data-tip="Add new"
@@ -60,7 +60,7 @@ const Sidebar = () => {
         </li>
         <li>
           <details open>
-            <summary className="text-neutral">
+            <summary>
               <button className="text-xl tooltip" data-tip="Add new">
                 <IoIosAddCircleOutline />
               </button>
@@ -87,7 +87,7 @@ const Sidebar = () => {
         </li>
         <li>
           <details open>
-            <summary className="text-neutral">
+            <summary>
               <button className="text-xl tooltip" data-tip="Add new">
                 <IoIosAddCircleOutline />
               </button>

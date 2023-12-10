@@ -1,4 +1,5 @@
 import Sidebar from "@/components/home/Sidebar";
+import Editor from "@/components/home/Editor";
 import { MdNotes } from "react-icons/md";
 
 export default function Home() {
@@ -26,6 +27,9 @@ export default function Home() {
               </li>
             </ul>
           </div>
+
+          {/* Editor */}
+          <Editor />
         </div>
         <div className="drawer-side">
           <label
