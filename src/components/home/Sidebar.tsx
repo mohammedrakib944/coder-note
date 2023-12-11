@@ -35,7 +35,7 @@ const Sidebar = () => {
                 data-tip="Add new"
                 htmlFor="AddNewItem"
               >
-                <IoIosAddCircleOutline />
+                <MdLibraryBooks />
               </label>
               <span>Interview Preparation</span>
             </summary>
@@ -62,7 +62,7 @@ const Sidebar = () => {
           <details open>
             <summary>
               <button className="text-xl tooltip" data-tip="Add new">
-                <IoIosAddCircleOutline />
+                <MdLibraryBooks />
               </button>
               <span>Practice</span>
             </summary>
@@ -89,7 +89,7 @@ const Sidebar = () => {
           <details open>
             <summary>
               <button className="text-xl tooltip" data-tip="Add new">
-                <IoIosAddCircleOutline />
+                <MdLibraryBooks />
               </button>
               <span>GoLang</span>
             </summary>
