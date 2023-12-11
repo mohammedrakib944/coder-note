@@ -85,7 +85,7 @@ const EditArticle = () => {
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full bg-base-100 text-4xl text-primary py-2 px-5 font-semibold outline-none mt-2"
+              className="w-full bg-base-100 text-4xl text-primary py-2 px-3 font-semibold outline-none mt-2"
             />
             <img src="./bar.svg" alt="" />
             <br />
