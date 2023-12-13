@@ -85,9 +85,9 @@ const EditArticle = () => {
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full bg-base-100 text-4xl text-primary py-2 px-3 font-semibold outline-none mt-2"
+              className="w-full bg-base-100 text-4xl text-primary py-2 px-4 font-semibold outline-none mt-2"
             />
-            <img src="./bar.svg" alt="" />
+            {/* <img src="./bar.svg" alt="" /> */}
             <br />
             <div className="mt-4 md:pl-3">
               <ReactQuill

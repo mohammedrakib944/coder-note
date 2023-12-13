@@ -11,7 +11,7 @@ const config: Config = {
     themes: [
       {
         blog_light: {
-          primary: "#d56405",
+          primary: "#ff7200",
           secondary: "#414141",
           accent: "#eee4e4",
           neutral: "#66635f",
@@ -24,7 +24,7 @@ const config: Config = {
           error: "#1e232a",
         },
         blog_dark: {
-          primary: "#E78109",
+          primary: "#ff7200",
           secondary: "#DDCEC6",
           accent: "#242a2c",
           neutral: "#908A82",
