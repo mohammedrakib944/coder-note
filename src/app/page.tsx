@@ -50,10 +50,15 @@ export default function Home() {
                 placeholder="Give a title ..."
               />
               <div className="modal-action">
-                <label htmlFor="AddNewItem" className="btn btn-sm bg-base-200">
+                <label
+                  htmlFor="AddNewItem"
+                  className="btn btn-sm bg-primary border-none hover:bg-orange-600"
+                >
                   Close!
                 </label>
-                <button className="btn btn-sm bg-base-200">Add</button>
+                <button className="btn btn-sm bg-primary border-none hover:bg-orange-600">
+                  Add
+                </button>
               </div>
             </form>
           </div>
