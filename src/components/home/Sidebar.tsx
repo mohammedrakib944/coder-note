@@ -5,9 +5,11 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 const Sidebar = () => {
   return (
     <div className="menu px-6 py-2 w-[300px] min-h-full bg-base-200 text-base-content border-r border-accent">
+    {/* Logo */}
       <div className="text-lg font-bold pt-1 text-primary">
         {"<Coder Note/>"}
       </div>
+      {/* Logo */}
       <div className="mt-5">
         <input
           className="w-full py-2 px-5 rounded-lg bg-base-100 border border-accent focus:outline-none"

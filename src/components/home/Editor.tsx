@@ -1,6 +1,6 @@
 "use client";
 import "./Editor.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import hljs from "highlight.js";
